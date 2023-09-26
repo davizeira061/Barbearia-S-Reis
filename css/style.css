@@ -78,6 +78,31 @@ p {
     color: #fff;
 }
 
+/* botão voltar ao topo da pagina */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #2cc76a;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
+
 /* main banner */
 .main-banner {
     background-image: url(../img/barbearia.webp);
@@ -221,7 +246,11 @@ p {
 .search-container {
     background-color: rgb(30, 48, 71);
     text-align: center;
-    padding: 5rem 0;
+    padding: 3rem 0;
+}
+
+iframe {
+    width: 90%;
 }
 
 .search-container h2 {
@@ -250,7 +279,7 @@ p {
     margin-bottom: 25px;
 }
 
-.search-container input[type="submit"] {
+/* .search-container input[type="submit"] {
     background-color: #2cc76a;
     padding: 15px 30px;
     color: #fff;
@@ -261,7 +290,7 @@ p {
 
 .search-container input[type="submit"]:hover {
     opacity: 1;
-}
+} */
 
 /* contact */
 .contact-container {

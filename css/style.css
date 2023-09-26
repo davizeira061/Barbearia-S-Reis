@@ -1,0 +1,428 @@
+/* Geral */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(30, 48, 71);
+}
+
+p {
+    color: rgb(102, 103, 104);
+}
+
+/* NavBar */
+.navbar-container {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(30, 48, 71);
+    padding: 0 2rem;
+}
+
+.navbar {
+    position: relative;
+}
+
+.logo {
+    width: 80px;
+    /* margin-top: 15px; */
+}
+
+.logo:hover {
+    transition: 0.5ms;
+    border: 1px solid #ffffff00;
+}
+
+.navbar-items {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 35px;
+}
+
+.navbar-items a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar-items a:hover {
+    color: #ffffff;
+    padding: 10px;
+    background-color: #ffffff2a;
+    border-radius: 5px;
+}
+
+.default-btn {
+    padding: 15px 20px;
+    background-color: #2cc76a;
+    border-radius: 5px;
+}
+
+.navbar-items .default-btn:hover {
+    background-color: #008a37;
+    padding: 15px 20px;
+    color: #fff;
+}
+
+/* main banner */
+.main-banner {
+    background-image: url(../img/barbearia.webp);
+      background-size: cover;
+      background-position: center;
+    padding: 10rem 0;
+}
+
+.main-banner h1,
+.main-banner p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3px;
+}
+
+.main-banner h1 {
+    font-size: 54px;
+}
+
+.main-banner p{
+    font-size: 32px;
+}
+
+/* services */
+.services-container {
+    padding: 5rem 0;
+}
+
+.services-container ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-container li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.fas {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-scissors {
+    color: #2cc76a;
+}
+
+.fa-rocket {
+    color: #ef3f29;
+}
+
+.fa-comments {
+    color: #ef8f29;
+}
+
+.services-container h3 {
+    margin-bottom: 25px;
+}
+
+.services-container p {
+    line-height: 24px;
+}
+
+/* prices and plans */
+
+.pricing-container {
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.pricing-container h2 {
+    font-size: 36px;
+}
+
+.pricing-container p {
+    font-size: 20px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-between; /* espaçat itens igualmente no espaço contido */
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.plan {
+    flex: 1;
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.plan ul {
+    padding: 0;
+}
+
+.plan li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e8e9ea;
+    color: #333;
+}
+
+.plan .price {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #2cc76a;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    margin: 0 auto -50px;
+    font-size: 20px;
+    position: relative;
+}
+
+.plan .plan-name {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(30, 48, 71);
+    padding: 50px 4px;
+    border-radius: 20px;
+}
+
+.plan .plan-btn {
+    background-color: #2cc76a;
+    color: #fff;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+/* search */
+.search-container {
+    background-color: rgb(30, 48, 71);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.search-container h2 {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.search-container p {
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.search-container input {
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.search-container input[type="text"] {
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.search-container input[type="submit"] {
+    background-color: #2cc76a;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.search-container input[type="submit"]:hover {
+    opacity: 1;
+}
+
+/* contact */
+.contact-container {
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container input, .contact-container textarea {
+    resize: none;
+    width: 90%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+}
+
+.contact-container textarea {
+    height: 100px;
+}
+
+.contact-container input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #2cc76a;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.contact-container input[type="submit"]:hover {
+    opacity: 1;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin: 40px 0 80px;
+}
+
+/* responsividade */
+
+/* small laptops a partir de 1100px */
+@media (max-width: 1100px) {
+    .plans-container {
+        width: 95%;
+    }
+
+    .plan {
+        margin: 0 5px;
+    }
+
+    .plan li {
+        height: 150px;
+    }
+}
+
+/* tablet 900px */
+@media (max-width: 900px) {
+    .main-banner p {
+        padding: 0 6rem;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .plan {
+        width: 100%;
+        max-width: 100%;
+        padding: 2%;
+    }
+    
+    .plan .plan-name {
+        height: 20px;
+    }
+    
+    #msg {
+        height: 100px;
+    }
+}
+
+/* celular 576px*/
+@media (max-width: 576px) {
+    .navbar-items {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .main-banner h1{
+        font-size: 50px;
+    }
+
+    .main-banner p{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .services-container ul {
+        flex-direction: column;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 100%;
+        padding: 2%;
+    }
+
+    #msg {
+        height: 150px;
+    }
+
+    .search-container h2 {
+        font-size: 32px;
+    }
+
+    .search-container p {
+        font-size: 20px;
+    }
+
+    .search-container input[type="text"] {
+        font-size: 11px;
+    }
+}
+
+/* celular 375px */
+@media (max-width: 375px) {
+    .navbar-items {
+        font-size: 12px;
+    }
+
+    .logo {
+        margin-left: -10px;
+    }
+
+    .navbar-items li {
+        margin-right: 20px;
+    }
+
+    .main-banner h1{
+        font-size: 40px;
+    }
+
+    .main-banner p{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+}

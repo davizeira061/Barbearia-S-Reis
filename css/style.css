@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Geral */
 *{
     margin: 0;
@@ -34,8 +38,8 @@ p {
 }
 
 .logo:hover {
-    transition: 0.5ms;
-    border: 1px solid #ffffff00;
+    transition: 0.5s;
+    transform: scale(0.9);
 }
 
 .navbar-items {
@@ -105,7 +109,7 @@ p {
 
 /* main banner */
 .main-banner {
-    background-image: url(../img/barbearia.webp);
+    background-image: url(../img/um-homem-cortando-o-cabelo-em-uma-barbearia_188544-29283.avif);
       background-size: cover;
       background-position: center;
     padding: 10rem 0;
@@ -196,6 +200,11 @@ p {
     flex: 1;
     max-width: 275px;
     margin: 0 20px;
+}
+
+.plan:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 
 .plan ul {
